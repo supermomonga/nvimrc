@@ -1,0 +1,55 @@
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+[[plugins]]
+repo = 'wsdjeg/dein-ui.vim'
+[[plugins]]
+repo = 'kana/vim-submode'
+[[plugins]]
+repo = 'kana/vim-operator-user'
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+[[plugins]]
+repo = 'kana/vim-textobj-entire'
+[[plugins]]
+repo = 'kana/vim-textobj-line'
+[[plugins]]
+repo = 'lewis6991/gitsigns.nvim'
+[[plugins]]
+repo = 'mattn/vim-findroot'
+hook_add = '''
+let g:findroot_patterns = [
+  \  '.git/',
+  \  '.gitignore',
+  \  'Rakefile',
+  \  'project.clj',
+  \  'package.json',
+  \  'manifest.json',
+  \  '*.csproj',
+  \  '*.sln',
+  \  'Gemfile',
+  \  'Gemfile.lock',
+  \  '.tool-versions',
+  \  'init.vim',
+  \]
+'''
+[[plugins]]
+repo = 'Mofiqul/vscode.nvim'
+hook_add = '''
+colorscheme vscode
+'''
+[[plugins]]
+repo = 'osyo-manga/vim-textobj-multiblock'
+[[plugins]]
+repo = 'osyo-manga/vim-over'
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+hook_add = '''
+let g:context_filetype#filetypes = context_filetype#default_filetypes()
+'''
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['Shougo/context_filetype.vim']
